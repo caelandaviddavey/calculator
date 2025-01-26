@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f3f4f6;
+    }
+
+    .calculator {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    .display {
+      background: #e5e7eb;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 2rem;
+      text-align: right;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    button {
+      font-size: 1.2rem;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background: #60a5fa;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #3b82f6;
+    }
+
+    .clear {
+      grid-column: span 2;
+      background: #ef4444;
+    }
+
+    .equals {
+      grid-column: span 2;
+      background: #10b981;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div class="display">0</div>
+    <div class="buttons">
+      <button class="number">7</button>
+      <button class="number">8</button>
+      <button class="number">9</button>
+      <button class="operator">&divide;</button>
+      <button class="number">4</button>
+      <button class="number">5</button>
+      <button class="number">6</button>
+      <button class="operator">&times;</button>
+      <button class="number">1</button>
+      <button class="number">2</button>
+      <button class="number">3</button>
+      <button class="operator">-</button>
+      <button class="number">0</button>
+      <button class="clear">C</button>
+      <button class="equals">=</button>
+      <button class="operator">+</button>
+    </div>
+  </div>
+  <script src="javascript.js"></script>
+</body>
+</html>
